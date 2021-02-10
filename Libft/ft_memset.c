@@ -1,11 +1,11 @@
-void	*ft_memset(void *ptr, int c, int n)
+void	*ft_memset(void *ptr, int c, unsigned int n)
 {
 	n--;
-	((char *)ptr)[n+1] = '\0';
-	while (n >= 0)
+	while (n > 0)
 	{
 		((char *)ptr)[n] = c;
 		n--;
 	}
+	((char *)ptr)[n] = c;
 	return (ptr);
 }
