@@ -1,14 +1,12 @@
 #include <string.h>
 #include <stdio.h>
-
-int	ft_memcmp(const void *s1, const void *s2, unsigned int n);
+#include "libft.h"
 
 int	main(void)
 {
 	char s1[20] = "Hello World!";
-	char s2[20] = "Heyy";
 
-	printf("%d\n", memcmp(s1, s2, 0));
-	printf("%d\n", ft_memcmp(s1, s2, 0));
+	printf("%ld\n", ft_strlen(s1));
+	printf("%ld\n", strlen(s1));
 	return (0);
 }
