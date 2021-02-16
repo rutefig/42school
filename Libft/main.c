@@ -1,14 +1,14 @@
 #include <string.h>
 #include <stdio.h>
 
-void	*ft_memchr(const void *s, int c, unsigned int n);
+int	ft_memcmp(const void *s1, const void *s2, unsigned int n);
 
 int	main(void)
 {
-	char src[20] = "Hello World!";
-	char *c2;
+	char s1[20] = "Hello World!";
+	char s2[20] = "Heyy";
 
-	c2 = (char *)ft_memchr(src, 'e', 10);
-	printf("%p\n", c2);
+	printf("%d\n", memcmp(s1, s2, 0));
+	printf("%d\n", ft_memcmp(s1, s2, 0));
 	return (0);
 }
