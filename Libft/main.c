@@ -4,11 +4,11 @@
 
 int	main(void)
 {
-	char s1[20] = "Hello World!";
-	char s2[20] = "";
+	char s1[20] = "Hello ";
+	char s2[20] = "World!";
 	size_t	size;
 
-	size = ft_strlcpy(s2, s1, 12);
+	size = ft_strlcat(s2, s1, 6);
 
 	printf("%ld\n", size);
 	printf("%s\n", s2);
