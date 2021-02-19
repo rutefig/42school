@@ -5,8 +5,12 @@
 int	main(void)
 {
 	char s1[20] = "Hello World!";
+	char s2[20] = "";
+	size_t	size;
 
-	printf("%ld\n", ft_strlen(s1));
-	printf("%ld\n", strlen(s1));
+	size = ft_strlcpy(s2, s1, 12);
+
+	printf("%ld\n", size);
+	printf("%s\n", s2);
 	return (0);
 }
