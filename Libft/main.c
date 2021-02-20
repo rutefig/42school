@@ -6,10 +6,9 @@ int	main(void)
 {
 	char s1[50] = "Hello World! Have a nice day!";
 	char s2[20] = "Have";
-	char *ptr;
 
-	ptr = ft_strnstr(s1, s2, 30);
-	printf("String after %s is %s\n", s2, ptr);
+	printf("My function: %d\n", ft_strncmp(s1, s2, 30));
+	printf("Default function: %d\n", strncmp(s1, s2, 30));
 	
 	return (0);
 }
