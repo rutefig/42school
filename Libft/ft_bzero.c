@@ -1,4 +1,6 @@
-void	ft_bzero(void *s, unsigned int n)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
 	n--;
 	while (n > 0)

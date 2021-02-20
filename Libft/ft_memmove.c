@@ -1,7 +1,9 @@
-void	*ft_memmove(void *dest, const void *src, unsigned int n)
+#include "libft.h"
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char	tmp[n];
-	unsigned int i;
+	size_t	i;
 
 	i = 0;
 	while (i <= n)

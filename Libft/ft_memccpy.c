@@ -1,6 +1,8 @@
-void	*ft_memccpy(void *dest, const void *src, int c, unsigned int n)
+#include "libft.h"
+
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 	int	c_found;
 
 	c_found = 0;
