@@ -5,11 +5,11 @@
 int	main(void)
 {
 	char s1[50] = "Hello World! Have a nice day!";
-	const char ch = 'd';
-	char *ret;
+	char s2[20] = "Have";
+	char *ptr;
 
-	ret = ft_strrchr(s1, ch);
-	printf("String after %c is %s\n", ch, ret);
+	ptr = ft_strnstr(s1, s2, 30);
+	printf("String after %s is %s\n", s2, ptr);
 	
 	return (0);
 }
