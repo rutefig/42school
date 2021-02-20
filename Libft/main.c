@@ -5,10 +5,10 @@
 int	main(void)
 {
 	char s1[50] = "Hello World! Have a nice day!";
-	const char ch = '?';
+	const char ch = 'd';
 	char *ret;
 
-	ret = ft_strchr(s1, ch);
+	ret = ft_strrchr(s1, ch);
 	printf("String after %c is %s\n", ch, ret);
 	
 	return (0);
