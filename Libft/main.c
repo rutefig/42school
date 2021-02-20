@@ -4,13 +4,12 @@
 
 int	main(void)
 {
-	char s1[20] = "Hello ";
-	char s2[20] = "World!";
-	size_t	size;
+	char s1[50] = "Hello World! Have a nice day!";
+	const char ch = '?';
+	char *ret;
 
-	size = ft_strlcat(s2, s1, 6);
-
-	printf("%ld\n", size);
-	printf("%s\n", s2);
+	ret = ft_strchr(s1, ch);
+	printf("String after %c is %s\n", ch, ret);
+	
 	return (0);
 }
