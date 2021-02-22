@@ -1,14 +1,13 @@
-#include <string.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include "libft.h"
 
 int	main(void)
 {
-	char s1[50] = "Hello World! Have a nice day!";
-	char s2[20] = "Have";
+	char str[10] = "-134";
 
-	printf("My function: %d\n", ft_strncmp(s1, s2, 30));
-	printf("Default function: %d\n", strncmp(s1, s2, 30));
+	printf("My ATOI: %d\n", ft_atoi(str));
+	printf("Result: %d\n", atoi(str));
 	
 	return (0);
 }
