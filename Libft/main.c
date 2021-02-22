@@ -5,9 +5,9 @@
 
 int	main(void)
 {
-	char	c = '\n';
+	char c = 'C';
 
-	printf("%d\n%d\n", ft_isalnum(c), isalnum(c));
+	printf("%c\n%c\n", tolower(c), ft_tolower(c));
 
 	return (0);
 }
