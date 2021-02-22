@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 #include "libft.h"
 
 int	main(void)
 {
-	char str[10] = "-134";
+	char	c = '\n';
 
-	printf("My ATOI: %d\n", ft_atoi(str));
-	printf("Result: %d\n", atoi(str));
-	
+	printf("%d\n%d\n", ft_isalnum(c), isalnum(c));
+
 	return (0);
 }
