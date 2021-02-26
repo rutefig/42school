@@ -6,6 +6,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	int	c_found;
 
 	i = 0;
+	c_found = 0;
 	while (i < n)
 	{
 		if (((char *)s)[i] == (char)c)

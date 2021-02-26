@@ -2,20 +2,11 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	char	tmp[n];
-	size_t	i;
-
-	i = 0;
-	while (i <= n)
-	{
-		tmp[i] = ((char *)src)[i];
-		i++;
-	}
-	i = 0;
-	while (i <= n)
-	{
-		((char *)dest)[i] = tmp[i];
-		i++;
-	}
+	unsigned char	tmp[n];
+	unsigned char	*ptr_tmp;
+	
+	ptr_tmp = &tmp[0];
+	ptr_tmp = ft_memcpy(ptr_tmp, src, n);
+	dest = ft_memcpy(dest, ptr_tmp, n);
 	return (dest);
 }

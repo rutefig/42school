@@ -9,8 +9,8 @@ void	*ft_memset(void *ptr, int c, size_t n)
 	str = ptr;
 	while (i < n)
 	{
-		str[n] = (unsigned char)c;
-		n--;
+		str[i] = (unsigned char)c;
+		i++;
 	}
 	return (str);
 }
